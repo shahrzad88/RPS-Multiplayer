@@ -5,18 +5,20 @@
     width: 100%;
     height: 100%;
     background-color: darkslateblue;
-    padding: 20px;
+    padding: 0px;
 }
 #header {
     width: inherit;
     background-color: transparent;
-    margin: 0px;
+    margin: 10px;
 }
 #play_ground {
     background-color: black;
+    padding: 40px;
 }
-h1.display-4 {
+h1 {
     font-family: 'Roboto';
+    font-weight: 700;
     text-align: center;
     color: white;
     margin: 0px;
@@ -24,12 +26,14 @@ h1.display-4 {
 }
 h2 {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     text-align: left;
     color: white;
     font-size: 18px;
 }
 p {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     text-align: left;
     color: white;
     font-size: 14px;
