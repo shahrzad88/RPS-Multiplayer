@@ -6,7 +6,7 @@
 
   <meta charset="UTF-8">
   <title>Two Player Rock Paper Scissor</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -14,16 +14,68 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  
   <!-- Firebase Reference -->
   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
 </head>
 <body>
+  <div class="container mx-auto" id="page">
+    <div class="jumbotron jumbotron-fluid" id="header">
+      <div class="container">
+        <h1 class="display-4">2 Player Rock Paper Scissor</h1>
+      </div>
+    </div>
     <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="row">
+            <h1>Player 1</h1>
+          </div>
+          <div id="player_one_info" class="row">
+            <h2>Join the game by entering your name!</h2>
+            <input id="player_one_name" placeholder="Display Name"/>
+            <button>Ready?</button>
+          </div>
+          <div class="row winDiv">
+            <p>Wins: <span id="player_one_wins">0</span></p>
+          </div>
+          <div class="row">
+            <p>Losses: <span id="player_one_losses">0</span></p>
+          </div>
+        </div>
+        <div class="col-md">
+          <img src="./assets/images/paper1.png" alt="player_one_choice" width="200px" height="200px">
+        </div>
+        <div class="col-md">
+          <img src="./assets/images/paper2.png" alt="player_two_choice" width="200px" height="200px">
+        </div>
+        <div class="col-sm">
+          <div class="row">
+            <h1>Player 2</h1>
+          </div>
+          <div id="player_two_info" class="row">
+            <h2>Nobody want to play? Enter your name!</h2>
+            <input id="player_two_name" placeholder="Display Name"/>
+            <button>Go!</button>
+          </div>
+          <div class="row winDiv">
+            <p>Wins: <span id="player_two_wins">0</span></p>
+          </div>
+          <div class="row">
+            <p>Losses: <span id="player_two_losses">0</span></p>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div id="userInfo">
 
     </div>
+  </div>
 
     <!-- JavaScript -->
     <script src="app.js"></script>
+
 </body>
 </html>
